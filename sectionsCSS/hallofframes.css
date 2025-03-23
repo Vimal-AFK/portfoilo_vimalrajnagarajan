@@ -1,0 +1,49 @@
+.hallofframes-container {
+    padding: 20px;
+    background-color: #f5f0e1;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border: 2px solid #d4af37;
+}
+
+.hallofframes-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #d4af37;
+    margin-bottom: 20px;
+}
+
+.hallofframes-container p {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.5;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.gallery-item {
+    border: 2px solid #d4af37;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 200px;
+}
+
+.gallery-image {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.gallery-description {
+    font-size: 1rem;
+    color: #555;
+}

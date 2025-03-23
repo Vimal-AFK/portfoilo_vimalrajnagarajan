@@ -1,0 +1,560 @@
+* {
+    cursor: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none; 
+    -webkit-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    transition: all 0.3s ease; 
+    font-family: 'Poppins', Arial, sans-serif; 
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #000;
+    font-family: Arial, sans-serif;
+}
+
+.full-screen {
+    width: 95vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.div_1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    height: 25%;
+    background: #f8f9fa;
+    border-radius: 10px;
+}
+
+.myselfDIV {
+    display: flex;
+    border-radius: 10px;
+    height: 100%;
+    gap: 10px;
+}
+
+.bornDIV {
+    display: flex;
+    border-radius: 10px;
+    border: 1px solid black;
+    height: 100%;
+    width: 40%;
+    justify-content: space-around;
+}
+
+.profileDIV {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profileIMG {
+    width: 95%;
+    min-width: 180px;
+    border-radius: 10%;
+    object-fit: cover;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.9));
+}
+
+.profileIMG:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition for hover effects */
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.9)) brightness(1.2);
+}
+
+.nameDIV {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.Name {
+    font-weight: 800;
+    font-size: 3.0rem;
+}
+
+.descDIV {
+    display: block;
+    border-radius: 10px;
+    border: 1px solid black;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    padding: 20px;
+}
+
+.Description {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.linkDIV {
+    border-radius: 10px;
+    border: 1px solid black;
+    height: 100%;
+    width: 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center items vertically */
+    justify-content: space-evenly;
+    /* Center items horizontally */
+}
+
+.linkDIV>a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.linkDIV>a:hover {
+    color: white;
+}
+
+.div_2 {
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    margin-top: 10px;
+    height: 75%;
+    gap: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    background: #f8f9fa;
+}
+
+.section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    width: 30%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.button {
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 1px;
+    transition: background-color 0.3s ease, transform 0.3s ease, border-radius 0.3s ease; /* Smooth button transitions */
+}
+
+.button:hover {
+    background-color: #000000;
+    color: white;
+    transition: transform 0.5s ease, background-color 0.5s ease, border-radius 1s ease;
+}
+
+.button:active {
+    background: grey;
+}
+
+.button:nth-child(1) {
+    grid-column: 1 / 3;
+    border-top-left-radius: 10px;
+}
+
+.button:nth-child(2) {
+    grid-column: 3 / 5;
+    border-top-right-radius: 10px;
+}
+
+.button:nth-child(3) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.button:nth-child(4) {
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+}
+
+.button:nth-child(5) {
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+}
+
+.button:nth-child(6) {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+}
+
+.button:nth-child(7) {
+    grid-column: 3 / 5;
+    grid-row: 3 / 4;
+}
+
+.button:nth-child(8) {
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+    border-bottom-left-radius: 10px;
+}
+
+.button:nth-child(9) {
+    grid-column: 3 / 5;
+    grid-row: 4 / 5;
+    border-bottom-right-radius: 10px;
+}
+
+.screen {
+    border: 1px solid black;
+    width: 70%;
+    border-radius: 10px;
+    overflow: auto;
+    transition: opacity 0.5s ease, transform 0.3s ease; /* Smooth transition for screen visibility */
+}
+
+.screen::-webkit-scrollbar {
+    display: none;
+}
+
+.fullScr {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    background: grey;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    z-index: 1000;
+    transition: background 0.3s ease, transform 0.3s ease; /* Smooth transition for fullscreen button */
+}
+
+.fullScr:hover {
+    background: black;
+    transform: scale(1.1);
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    transition: background 0.3s;
+}
+
+.cursor {
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: background 0.3s ease, transform 0.3s ease; /* Smooth transition for cursor and followers */
+    z-index: 11;
+}
+
+.follower {
+    width: 20px;
+    height: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: background 0.3s, transform 0.15s ease-out;
+    z-index: 10;
+}
+
+.follower2 {
+    width: 15px;
+    height: 15px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: background 0.3s, transform 0.15s ease-out;
+    z-index: 10;
+}
+
+.follower3 {
+    width: 10px;
+    height: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: background 0.3s, transform 0.15s ease-out;
+    z-index: 10;
+}
+
+.toggle-desc-icon {
+    display: none; /* Hidden by default */
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin-left: auto;
+    margin-right: 10px;
+    margin-top: 10px;
+    align-self: center; /* Center the toggle button within the myselfDIV */
+}
+
+#loading-animation {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+#loading-animation.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.loading-letter {
+    font-family: 'Dancing Script', cursive;
+    font-size: 5rem;
+    font-weight: bold;
+    color: white;
+    animation: bounce 1.5s infinite;
+}
+
+.loading-bar-container {
+    width: 80%;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.loading-bar {
+    width: 0;
+    height: 100%;
+    background-color: white;
+    animation: loadingBar 2s linear infinite;
+}
+
+@keyframes loadingBar {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+#default-quote {
+    margin-top: 100px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    border: 2px dashed #000;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+#default-quote:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #e9ecef, #f8f9fa);
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+
+    * {
+        cursor: block;
+    }
+
+    .cursor {
+        display: none;
+    }
+
+    .follower {
+        display: none;
+    }
+
+    .follower2 {
+        display: none;
+    }
+
+    .follower3 {
+        display: none;
+    }
+
+    .full-screen {
+        flex-direction: column;
+    }
+
+    .Name {
+        font-size: 2.2rem;
+    }
+
+    .div_1 {
+        flex-direction: column;
+        gap: 10px;
+        height: auto;
+        overflow: visible;
+    }
+
+    .linkDIV {
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    @keyframes slideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes slideUp {
+        from {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        to {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+    }
+
+    .descDIV {
+        display: none; /* Hidden by default in mobile view */
+        width: 100%;
+        padding: 10px;
+    }
+
+    .descDIV.show {
+        display: flex;
+        animation: slideDown 0.3s ease; /* Slide-down animation */
+    }
+
+    .descDIV.hide {
+        animation: slideUp 0.3s ease; /* Slide-up animation */
+    }
+
+    .toggle-desc-icon {
+        display: block; /* Show toggle icon in mobile view */
+    }
+
+    .myselfDIV {
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .screen {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 100%;
+        width: 100%;
+        overflow: auto;
+        background: #f8f9fa;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: opacity 0.5s ease;
+        opacity: 0;
+    }
+
+    .screen.active {
+        display: block;
+        opacity: 1;
+    }
+
+    .section {
+        width: 100%;
+    }
+
+    .bornDIV {
+        width: 100%;
+    }
+}

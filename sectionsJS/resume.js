@@ -4,7 +4,7 @@ function resume() {
   let resumeHTML = `
     <div class="resume-container">
         <h2 class="resume-title">My Resume</h2>
-        <a href="files/resume.pdf" download class="resume-download">Download Resume</a>
+        <a href="https://drive.google.com/file/d/1hMqY75BYvclgCiz86GPqSQj6ckY3aTl9/view?usp=sharing" class="resume-download">Download Resume</a>
     </div>
   `;
 

@@ -27,7 +27,7 @@ function bio() {
                 <span>💻</span> <span>⚡</span> <span>🎨</span> <span>🕹️</span> <span>🚀</span>
             </div>
             <div class="bio-footer">
-                <p>📌 Fun Fact: I am Spiderman</p>
+                <span>👀Visitors Count :</span> <img src="https://hitwebcounter.com/counter/counter.php?page=20019116&style=0007&nbdigits=5&type=page&initCount=10" title="Counter Widget" Alt="Visit counter For Websites" border="1" />         
             </div>
         </div>
     </div>

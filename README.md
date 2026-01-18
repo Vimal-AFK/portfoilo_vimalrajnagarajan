@@ -2,6 +2,8 @@
 
 A clean, responsive personal portfolio built with HTML, CSS and JavaScript to showcase projects, skills, and contact information.
 
+
+<img width="1873" height="904" alt="image" src="https://github.com/user-attachments/assets/fb83cc2c-7741-498b-9e72-ad868b92c328" />
 Live Site: https://vimal-afk.github.io/portfoilo_vimalrajnagarajan/
 
 ## Table of Contents

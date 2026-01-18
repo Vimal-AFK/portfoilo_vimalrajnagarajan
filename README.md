@@ -108,6 +108,4 @@ This project is provided under the MIT License. See LICENSE for details (or add 
 ## Contact
 
 - GitHub: [Vimal-AFK](https://github.com/Vimal-AFK)
-- Email: (add your email)
-
-Thanks for visiting — feel free to customize this README and the site content to better reflect your work and contact details.
+- Email: vimalrajnagarajan147@gmail.com
